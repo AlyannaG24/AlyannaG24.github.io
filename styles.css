@@ -1,0 +1,63 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightpink;
+    margin: 0px
+}
+
+.wrap {
+    background-image: url(ooagi.png);
+    background-size: 100px;
+    padding: 0;
+}
+
+h1 {
+    color: lightcoral;
+    font-size: 400px;
+    margin:0;
+    padding: 50px;
+    padding-top: 200px;
+    -webkit-text-stroke: 6px white;
+
+}
+
+h2 {
+    font-size: 50px;
+    padding: 50px;
+    padding-bottom: 0px;
+    
+
+}
+
+h3 {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+   
+}
+
+/* I first had issues getting the background image to fill the whole top of the page. first I realised it wasn't filling the margins so I made the margins 0 and replaced
+it with more padding, still had some issues I didnt really understand so i ended up just put h1-3 into a div and the background img for the whole div and it works now */
+
+.question {
+    border: 20px solid transparent;
+    border-image: url(lace-border.png) 90 round;
+    border-radius: 5px;
+    border-image-outset: 20px;
+
+    padding: 15px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 200px;
+    margin-right: 200px;
+    /* I wanted to decorate the text boxes because they looked too plain. I thought the regular borders looksed too plain too so 
+    I looked up if they was a way to do any other borders and I found you can use an image border*/
+}
+
+.cal-sans-regular {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
