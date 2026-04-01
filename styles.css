@@ -7,9 +7,9 @@ body {
 .wrap {
     background-image: url(repeating\ flowers\ bg.jpg);
     background-size: 400px;
-    border: 30px solid transparent;
+    border: 40px solid transparent;
     border-image: url(lace-border.png) 90 round;
-    border-image-outset: 30px;
+    border-image-outset: 40px;
 
 }
 /* I first had issues getting the background image to fill the whole top of the page. first I realised it wasn't filling the margins so I made the margins 0 and replaced
@@ -46,18 +46,21 @@ to fix this i made the padding for h2 and 3 70px instead of 50 */
 
 
 .question {
-    border: 20px solid transparent;
+    border: 30px solid transparent;
     border-image: url(lace-border.png) 90 round;
     border-radius: 5px;
-    border-image-outset: 20px;
+    border-image-outset: 30px;
     box-shadow: 40px 40px 5px 5px lightpink;
 
-    padding: 15px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    padding: 25px;
+    margin-bottom: 200px;
+    margin-top: 70px;
     background-color: rgba(255, 255, 255, 0.7);
     margin-left: 400px;
     margin-right: 400px;
+
+    position: relative
+    
     /* I wanted to decorate the text boxes because they looked too plain. I thought the regular borders looksed too plain too so 
     I looked up if they was a way to do any other borders and I found you can use an image border*/
 }
@@ -76,9 +79,70 @@ to fix this i made the padding for h2 and 3 70px instead of 50 */
 }
 
 video{ 
-    border: 20px solid transparent;
+    border: 30px solid transparent;
     border-image: url(lace-border.png) 90 round;
     margin: 100px
     
 }
 
+.bow{
+    width: 80px;
+    display: flex
+    justify-content: center;
+
+}
+
+
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+.line {
+  flex: 0 1 200px;
+  height: 4px;
+  
+  background-color: pink
+  ;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: pink;
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+
+.overlay-image {
+  position: relative;
+
+  top: -100px;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  width: 80px;
+  
+  margin-bottom: -120px;
+  /* I really wanted to put the bow on the text/div box because I went through a lot of trouble to get it,
+  I then went through a lot of trouble to position it to exactly where I wanted it. Afer a lot of googling
+  I found out about position relative and absolute*/
+}
+
+.link{
+    color: rgb(209, 103, 130);
+    /* I wanted to make the hyperlinked text pink too, the blue was clashing with my theming. 
+    I just found out if you hover the colour box you choose a custom colour with slider and 
+    value/saturation box, I used this to get a darker pink for better readability*/
+}
