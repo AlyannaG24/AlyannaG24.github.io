@@ -65,6 +65,7 @@ to fix this i made the padding for h2 and 3 70px instead of 50 */
     I looked up if they was a way to do any other borders and I found you can use an image border*/
 }
 
+
 .cal-sans-regular {
     font-family: "Cal Sans", sans-serif;
     font-weight: 400;
@@ -84,14 +85,6 @@ video{
     margin: 100px
     
 }
-
-.bow{
-    width: 80px;
-    display: flex
-    justify-content: center;
-
-}
-
 
 
 .heading {
