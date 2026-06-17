@@ -7,35 +7,77 @@
 
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <!-- I used the same format from the past assignemnts -->
 
 </head>
 <body>
-    <main class="page"> 
-        <header class="intro"> 
-            <h1 >My Memory Box</h1> 
-            <p class="instruction"> Move across an object to examine it and uncover the memory attached to it. </p> 
-        </header>
+<div class="page">
+    <!-- made a page div to make it easier because I think I want to keep this single-paged -->
+
+        <div class="box">
+
+            <div
+                class="memory-object"
+                data-title="Postcard from Japan"
+                data-date="March 2015"
+                data-story="I bought this postcard during the first trip I took alone. I was part of my school's exchange program and this was where I met Nao."
+            >
+                <!-- I wanted to tackle the appearing info first so I made them all data that's attatched to each object
+                 I learned how to use this with youtube, w3schools and MDN with some dificulty but I eventually got it
+
+                 I think when I add more objects it should also be fairly straight forward to replicate this                 
+                -->
+
+          
+                <div class="image-container">
+
+                    <img
+                        class="postcard-image"
+                        src="postcard.png"
+                        alt="Postcard"
+                    >
+                    <div class="magnifier"></div>
+                    <!-- finding the w3schools guide and youtube turorials on magnifying glasses and magnifying images 
+                     in general was very lucky for me
+                     It gave me in depth explanations on how it works and it helped me a lot -->
+
+                </div>
+            </div>
 
 
+           <div class="memory-paper">
+
+            <div class="paper-heading" id="paperHeading">
+                <h2>My Memory Box</h2>
+             </div>
+             <!-- I originally had my title at the top above the box but seeing the empty paper in the box gave me an idea to
+              put the title in it, like how you would lable boxes with post-it notes -->
+
+                <div class="paper-text" id="paperText">
+                     <p class="memory-date" id="memoryDate"></p>
+                     <h2 class="memory-title" id="memoryTitle"></h2>
+                     <p class="memory-story" id="memoryStory"></p>
+                     <!-- I gave the memory paper classes and ids to help make my css adn js easier to design and make interactive -->
+
+                 </div>
+
+            </div>
 
 
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 </body>
+
 </html>
 
 <!-- 
-https://www.magnific.com/free-photo/red-silk-texture_979502.htm#fromView=search&page=1&position=18&uuid=2c8d75bf-bbcc-46ff-a6ec-215abeb57fdd&query=red+fabric
-https://www.magnific.com/free-photo/empty-box-top-view_859251.htm#fromView=search&page=1&position=1&uuid=12350bb8-11e3-4cbb-ad36-5e2e7364f391&query=box+top+down?log-in=email
+ATTRIBUTIONS
+"Torn paper vector, vintage sticker with design space" by rawpixel.com. Magnific. License:Free
+"Travel postcard with japanese landscape by " by freepik. Magnific. License:Free
+"Red silk texture" by kjpargeter. Magnific. License:Free
+Empty box top view by kstudio. Magnific. License:Free
 -->
+
+<!-- I know i should have more objects to really have the effects of a memory box, but I am running out of time and i just decided to do one object to get the idea across witht he action -->
